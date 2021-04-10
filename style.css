@@ -2,7 +2,6 @@ body,
 html {
 	height: 100%;
 	width: 100%;
-	display: grid;
 	background: rgb(238, 174, 202);
 	background: linear-gradient(
 		30deg,
@@ -11,6 +10,7 @@ html {
 	);
 }
 
+/*Button*/
 button {
 	margin: auto;
 	font-size: 100px;
@@ -26,22 +26,51 @@ button:hover {
 	border: 3px solid white;
 }
 
+button:focus {
+	outline: none;
+}
+
+/*Divisons*/
+#big {
+	display: grid;
+	margin-top: 50px;
+}
+
 #container {
-	height: 300px;
-	width: 300px;
-	margin: auto;
-	display: flex;
+	margin-left: auto;
+	margin-right: auto;
 }
 
+/*Candle*/
 .candle {
-	width: 12px;
-	height: 16px;
-	background-color: rgb(100, 100, 200);
-	transform-origin: bottom;
-	transform: translate(10px, 48px);
+	width: 3px;
+	height: 60px;
 	background-color: #e2c5a3;
+	border: 3px solid #e2c5a3;
+	visibility: hidden;
 }
 
+.candle:hover {
+	background-color: #e2c5a3;
+	border: 3px solid #e2c5a3;
+}
+
+/*Candle flame*/
+.candleflame {
+	width: 45px;
+	height: 45px;
+	border-radius: 0 40% 60% 40%;
+	transform: scaleX(0.8) rotate(45deg);
+	background-color: #ea5644;
+	border: 3px solid #ea5644;
+	visibility: hidden;
+}
+
+.candleflame:hover {
+	border: 3px solid #fc7a6f;
+}
+
+/*Birthday text*/
 #text {
 	font-family: Sans-Serif;
 	font-size: 50px;
@@ -72,4 +101,13 @@ button:hover {
 	100% {
 		color: #fc6f8d;
 	}
+}
+
+#ptext {
+	font-family: Sans-Serif;
+	font-size: 15px;
+	text-align: center;
+	align-items: center;
+	color: #9e4841;
+	visibility: hidden;
 }
