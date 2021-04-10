@@ -1,0 +1,26 @@
+body,
+html {
+	height: 100%;
+	display: grid;
+	background: rgb(238, 174, 202);
+	background: linear-gradient(
+		30deg,
+		rgba(238, 174, 202, 1) 0%,
+		rgba(148, 187, 233, 1) 100%
+	);
+}
+
+button {
+	margin: auto;
+	font-size: 30px;
+	font-family: Sans-Serif;
+	color: #131313;
+	border: 3px solid #131313;
+	background-color: white;
+}
+
+button:hover {
+	background-color: #131313;
+	color: white;
+	border: 3px solid white;
+}
