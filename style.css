@@ -1,6 +1,7 @@
 body,
 html {
 	height: 100%;
+	width: 100%;
 	display: grid;
 	background: rgb(238, 174, 202);
 	background: linear-gradient(
@@ -12,15 +13,63 @@ html {
 
 button {
 	margin: auto;
-	font-size: 30px;
+	font-size: 100px;
 	font-family: Sans-Serif;
-	color: #131313;
-	border: 3px solid #131313;
+	color: #fc7a6f;
+	border: 3px solid #fc7a6f;
 	background-color: white;
 }
 
 button:hover {
-	background-color: #131313;
+	background-color: #fc7a6f;
 	color: white;
 	border: 3px solid white;
+}
+
+#container {
+	height: 300px;
+	width: 300px;
+	margin: auto;
+	display: flex;
+}
+
+.candle {
+	width: 12px;
+	height: 16px;
+	background-color: rgb(100, 100, 200);
+	transform-origin: bottom;
+	transform: translate(10px, 48px);
+	background-color: #e2c5a3;
+}
+
+#text {
+	font-family: Sans-Serif;
+	font-size: 50px;
+	text-align: center;
+	align-items: center;
+	visibility: hidden;
+	animation-name: text;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes text {
+	0% {
+		color: #fc7a6f;
+	}
+	20% {
+		color: #fc6fa9;
+	}
+	40% {
+		color: #7e6ffc;
+	}
+	60% {
+		color: #6fcffc;
+	}
+	80% {
+		color: #fcd16f;
+	}
+	100% {
+		color: #fc6f8d;
+	}
 }
